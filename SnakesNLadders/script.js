@@ -141,11 +141,8 @@ function play(position){
         var dice = rollingDice();
         console.log("dice:"+ dice);
         position += dice;
-        // position = checkSnakes(position);
-        // position = checkLadders(position);
         position = checkSnakeLadder(position);
         count = count + 1;
-        // console.log("position: " + position)
         return position;        
 };
 };
